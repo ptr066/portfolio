@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    padding: 0;
+}
+
+
+
+.navbar-bg {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    width: 1535.4px;
+    height: 65px;
+    background: linear-gradient(90deg, #1900ff, #00ffcc, #1900ff);
+    background-size: 300% 100%;
+    animation: navbarGlow 6s linear infinite;
+    filter: blur(10px);
+    z-index: 0;
+    
+}
+
+@keyframes navbarGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.navbar {
+    list-style-type: none;
+  background-color: rgb(3, 3, 3);
+  margin:10px;
+  position: absolute;
+  left: -30vw;
+  top: 0;
+  width: 402.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap:50px;
+  padding:0px 599px 0 1000px;
+  z-index: 1;
+}
+.navbar li {
+    width: 100%;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    transition: width 0.4s ease, background-color 0.4s ease;
+    overflow: hidden;
+    border-radius: 16px;
+    padding-left: 12px;
+    box-sizing: border-box;
+}
+
+.navbar a:hover {
+    width: 157px;
+    background-color: #111;
+}
+
+.navbar i {
+    font-size: 26px;
+    z-index: 2;
+}
+
+.navbar a span {
+    opacity: 0;
+    white-space: nowrap;
+    margin-left: 12px;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.navbar a:hover span {
+    opacity: 1;
+}
+
+
+
+.navbar a:hover::before {
+    opacity: 1;
+}
+
+@keyframes spin-glow {
+    0% {
+        --angle: 0deg;
+        background-position: 0 0;
+    }
+    50% {
+        --angle: 180deg;
+        background-position: 400% 0;
+    }
+    100% {
+        --angle: 360deg;
+        background-position: 0 0;
+    }
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    border-radius: 16px;
+}
+.card{
+    margin:0x;
+        margin-top: 0px;
+        padding:
+        10%;
+          width: 1250.0px;
+      background:
+    #1c1f2b;
+      text-align: center;
+      border-radius: -0.6px;
+      margin-top: 200.4px;
+      left: 0.4%;
+      position: absolute;
+      top: -25%;
+      z-index: -1;
+
+}
+h2{
+    color: white;
+}
+p.card{
+    text-align:center;
+    color: white;
+}
+.timeline{
+        position: relative;
+        max-width: 1200px;
+        margin: auto;
+}
+
+
+  
